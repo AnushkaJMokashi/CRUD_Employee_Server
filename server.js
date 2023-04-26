@@ -8,14 +8,14 @@ const cors = require('cors');
 
 const expressApp = express();
 expressApp.use(cors({
-    origin: ['htmongodb+srv://anushkamokashi:Eqpo0218%40anu@crudemployee.o5cui0o.mongodb.net/testtp://localhost:4200'],
+    origin: ['http://localhost:4200'],
     "methods": "GET,PUT,POST",
     "preflightContinue": false,
     "optionsSuccessStatus": 204,
     credentials: true
 }))
 
-mongoose.connect("mongodb://0.0.0.0:27017/est",{
+mongoose.connect("mongodb+srv://anushkamokashi:Eqpo0218%40anu@crudemployee.o5cui0o.mongodb.net/test",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(()=>{
