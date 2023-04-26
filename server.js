@@ -8,7 +8,7 @@ const cors = require('cors');
 
 const expressApp = express();
 expressApp.use(cors({
-    origin: ['http://localhost:4200'],
+    origin: ['htmongodb+srv://anushkamokashi:Eqpo0218%40anu@crudemployee.o5cui0o.mongodb.net/testtp://localhost:4200'],
     "methods": "GET,PUT,POST",
     "preflightContinue": false,
     "optionsSuccessStatus": 204,
