@@ -15,9 +15,11 @@ expressApp.use(cors({
     credentials: true
 }))
 
-mongoose.connect("mongodb+srv://anushkamokashi:Eqpo0218%40anu@crudemployee.o5cui0o.mongodb.net/test",{
+// mongoose.connect("mongodb+srv://anushkamokashi:Eqpo0218%40anu@crudemployee.o5cui0o.mongodb.net/test",{
+mongoose.connect("mongodb+srv://anushkamokashi24:Eqpo0218%40anu@anushka24.7dsljl7.mongodb.net/?retryWrites=true&w=majority",{
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    family:4,
 }).then(()=>{
     console.log("Connected..");
 }).catch((err)=>{
